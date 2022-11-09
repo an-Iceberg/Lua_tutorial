@@ -64,3 +64,12 @@ local function multiple_return_types()
 end
 
 print(multiple_return_types())
+
+-- Callbacks
+local function something(a, b)
+  b(a)
+end
+
+something(12, function(number)
+  print("number: "..number)
+end)
