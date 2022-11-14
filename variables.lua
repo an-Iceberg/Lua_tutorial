@@ -1,53 +1,59 @@
-print()
+local variables = {}
 
---[[ Multiline comments
-are quite nice
-to be quite honest ]]
+variables.run = function()
+  print()
 
--- Global variables start with capital letters
-Global = 20
-_G.hello = "hello"
+  --[[ Multiline comments
+  are quite nice
+  to be quite honest ]]
 
--- Local variable
-local message = "Hello World"
+  -- Global variables start with capital letters
+  Global = 20
+  _G.hello = "hello"
 
--- String concatenation
-print(message .. ", how are you doing tonight?")
-print("Global variables: " .. Global .. ", " .. _G.hello)
+  -- Local variable
+  local message = "Hello World"
 
---[[ Variable types:
-- nil
-- number
-- string
-- bool
-- tables ]]
+  -- String concatenation
+  print(message .. ", how are you doing tonight?")
+  print("Global variables: " .. Global .. ", " .. _G.hello)
 
-local a
-a = 2 + 5
+  --[[ Variable types:
+  - nil
+  - number
+  - string
+  - bool
+  - tables ]]
 
--- Multiple initilaization
-local b, c, d, e = 4, 4, 55, "hello"
+  local a
+  a = 2 + 5
 
-local name = "Jack"
-local surname = "Smitter"
-print(name .. ' ' .. surname .. '\n')
+  -- Multiple initilaization
+  local b, c, d, e = 4, 4, 55, "hello"
 
--- Mutliline Strings
-local multilineString = [[
-This is a
-multiline
-String ]]
+  local name = "Jack"
+  local surname = "Smitter"
+  print(name .. ' ' .. surname .. '\n')
 
-print(multilineString .. '\n')
+  -- Mutliline Strings
+  local multilineString = [[
+  This is a
+  multiline
+  String ]]
 
--- Prints variable type
-print(type(a) .. " " .. type(multilineString))
+  print(multilineString .. '\n')
 
--- Number as a string
-local number = "22"
+  -- Prints variable type
+  print(type(a) .. " " .. type(multilineString))
 
--- Const variables
-local const <const> = 12
+  -- Number as a string
+  local number = "22"
 
--- Close variables
-local close <close> = {}
+  -- Const variables
+  local const <const> = 12
+
+  -- Close variables
+  -- local close <close> = {}
+end
+
+return variables
