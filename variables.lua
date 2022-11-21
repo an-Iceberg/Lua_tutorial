@@ -1,7 +1,7 @@
 local variables = {}
 
 variables.run = function()
-  print()
+  print(string.upper("  Variables"))
 
   --[[ Multiline comments
   are quite nice

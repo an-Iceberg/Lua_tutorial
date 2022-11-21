@@ -1,7 +1,7 @@
 local coroutines = {}
 
 coroutines.run = function()
-  print("\nCoroutines")
+  print(string.upper("  Coroutines"))
 
   local routine1 = coroutine.create(function ()
     for i = 1, 10, 1 do

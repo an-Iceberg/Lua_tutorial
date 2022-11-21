@@ -1,6 +1,8 @@
 local functions = {}
 
 functions.run = function()
+  print(string.upper("  Functions"))
+
   -- Functions
   local function thisIsAFunction()
     print("This is a function")
@@ -76,6 +78,18 @@ functions.run = function()
   something(12, function(number)
     print("number: "..number)
   end)
+
+  local function func1()
+    local function func2()
+      print("local function level 2")
+    end
+
+    print("local function")
+
+    func2()
+  end
+
+  func1()
 end
 
 return functions

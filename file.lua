@@ -1,6 +1,8 @@
 local file = {}
 
 file.run = function()
+  print(string.upper("  Files"))
+
   local file = io.open("myFile.txt", "r")
 
   if file ~= nil then

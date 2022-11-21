@@ -1,6 +1,8 @@
 local oop = {}
 
 oop.run = function()
+  print(string.upper("  OOP"))
+
   -- object
   local function pet(name, status)
     name = name or ""

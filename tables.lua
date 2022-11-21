@@ -1,6 +1,8 @@
 local tables = {}
 
 tables.run = function()
+  print(string.upper("  Tables"))
+
   local array = {2, 3, 45, 92, 86, 6, 27, 74, 17}
 
   -- Tables

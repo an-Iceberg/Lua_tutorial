@@ -1,6 +1,8 @@
 local control_flow = {}
 
 control_flow.run = function()
+  print(string.upper("  Contorl Flow"))
+
   local a, b, d = 2 + 5, 4, 55
 
   -- Control flow

@@ -1,6 +1,8 @@
 local loops = {}
 
 loops.run = function()
+  print(string.upper("  Loops"))
+
   -- Loops
   for i = 1, 10, 1 do
     print(string.rep('*', i))
